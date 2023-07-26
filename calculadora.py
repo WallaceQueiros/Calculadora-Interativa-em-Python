@@ -31,22 +31,23 @@ while True:
 
     operation = input("Enter the number operation: ")
 
-    if operation == '5':
-        print('EXIT...')
+    if operation == "5":
+        print("EXIT...")
         break
 
     numb1 = float(input("Enter the first number: "))
-    numb2 = float(input("Enter the first number:  "))
+    numb2 = float(input("Enter the second number:  "))
 
-    if operation == '1':
+    if operation == "1":
         result = sum_numbers(numb1, numb2)
-    elif operation == '2':
+    elif operation == "2":
         result = subtract_numbers(numb1, numb2)
-    elif operation == '3':
+    elif operation == "3":
         result = multiply_numbers(numb1, numb2)
-    elif operation == '4':
+    elif operation == "4":
         result = divide_numbers(numb1, numb2)
     else:
-        raise ValueError('Invalid operation')
+        print("Invalid value. Please try again.")
+        continue
 
     print(f"Result: {result}")
