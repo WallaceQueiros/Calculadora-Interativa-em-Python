@@ -1,10 +1,10 @@
 def display_menu():
-    print("==== CALCULADORA ====")
-    print("[1]: Soma")
-    print("[2]: Subtração")
-    print("[3]: Multiplicação")
-    print("[4]: Divisão")
-    print("[5]: Sair")
+    print("==== CALCULATOR ====")
+    print("[1]: Sum")
+    print("[2]: Subtract")
+    print("[3]: Multiply")
+    print("[4]: Divide")
+    print("[5]: Exit")
 
 
 def sum_numbers(num1, num2):
