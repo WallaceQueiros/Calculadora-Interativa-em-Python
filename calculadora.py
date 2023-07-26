@@ -50,4 +50,3 @@ while True:
         raise ValueError('Invalid operation')
 
     print(f"Result: {result}")
-
