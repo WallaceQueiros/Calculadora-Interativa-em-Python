@@ -26,23 +26,28 @@ def divide_numbers(num1, num2):
         raise ValueError("Cannot divide by zero.")
 
 
-def calculate():
-    num1 = float(input("Enter the first number: "))
-    operation = input("Enter the operation (+, -, *, /): ")
-    num2 = float(input("Enter the first number:  "))
+while True:
+    display_menu()
 
-    if operation == '+':
-        result = sum_numbers(num1, num2)
-    elif operation == '-':
-        result = subtract_numbers(num1, num2)
-    elif operation == '*':
-        result = multiply_numbers(num1, num2)
-    elif operation == '/':
-        result = divide_numbers(num1, num2)
+    operation = input("Enter the number operation: ")
+
+    if operation == '5':
+        print('EXIT...')
+        break
+
+    numb1 = float(input("Enter the first number: "))
+    numb2 = float(input("Enter the first number:  "))
+
+    if operation == '1':
+        result = sum_numbers(numb1, numb2)
+    elif operation == '2':
+        result = subtract_numbers(numb1, numb2)
+    elif operation == '3':
+        result = multiply_numbers(numb1, numb2)
+    elif operation == '4':
+        result = divide_numbers(numb1, numb2)
     else:
         raise ValueError('Invalid operation')
 
-    print(f"Resultado: {result}")
+    print(f"Result: {result}")
 
-
-calculate()
